@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>OS判定3</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<p>loading page.</p>
+<a id="uniqueId" href="https://web.myroute.fun/appLinks/complete_purchase_paypay">アンカーテキスト</a>
+<!--
+<h1>myroute jump</h1>
+    <script>
+        //  jqueryが動作しているか確認するのに合わせてOS判定テストを表示
+        alert($("h1").text());
+    </script>
+-->
+<script>
+
+    $(function() {
+
+        // setTimeout(() => {
+            // window.location.replace("https://web.myroute.fun/appLinks/complete_purchase_paypay");
+        // var link = document.getElementById("uniqueId");
+        // link.click()
+// }, "1000");
+
+window.location.href = "intent://web.myroute.fun/appLinks/complete_purchase_paypay#Intent;scheme=https;action=android.intent.action.VIEW;package=jp.co.toyota.myroute;end";
+// window.location.href = "https://web.myroute.fun/appLinks/complete_purchase_paypay";
+// window.open('https://web.myroute.fun/appLinks/complete_purchase_paypay', '_self');
+// window.location.replace("https://web.myroute.fun/appLinks/complete_purchase_paypay");
+    	// setTimeout("location.href='https://web.myroute.fun/appLinks/complete_purchase_paypay'",5000);
+// window.open('https://web.myroute.fun/appLinks/complete_purchase_paypay', '_blank');
+    });
+</script>
+
+</body>
+</html>
